@@ -1,0 +1,45 @@
+/**
+ * Header
+ */
+
+.header {
+    background: $color-white;
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+    @include box-shadow(0, -15px, 19px, $color-black);
+}
+
+.header-logo {
+    width: 200px;
+    height: auto;
+    display: block;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 0;
+        width: 150px;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    @include media-breakpoint-down(sm) {
+        background-color: $color-secondary; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+}
+
+.header-logo-link {
+    display: block;
+}
+
+.header-widget {
+    float: right;
+}

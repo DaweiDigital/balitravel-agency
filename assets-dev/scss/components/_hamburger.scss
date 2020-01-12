@@ -1,0 +1,107 @@
+/**
+ * Hamburger
+ */
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    display: none;
+    height: 29px;
+    outline: 0;
+    transform: translateX(0);
+    transition: transform ease .3s;
+    
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+    
+    .responsive-menu-is-show & {
+        transform: translateX(-100%);
+    }
+}
+
+.nav-mobile-close {
+    border: none;
+    height: 31px;
+    width: 31px;
+    top: 13px;
+    right: 17px;
+    position: absolute;
+    z-index: 20;
+
+    &:before, &:after {
+        content:"";
+        position: absolute;
+        top: 18px;
+        left: 0;
+        height: 2px;
+        width: 34px;
+        background-color: $color-white;
+    }
+
+    &:before {
+        transform: rotate(40deg);
+    }
+
+    &:after {
+        transform: rotate(-40deg);
+    }
+}
+
+.hamburger-box {
+    border: none;
+    padding: 0;
+    width: 68px;
+    padding-left: 87px;
+    margin: 6px 0 0;
+    position: relative;
+
+    .hamburger-inner {
+        width: 31px;
+        height: 20px;
+        margin-top: 5px;
+        float: right;
+        position: absolute;
+        top: 4px;
+        right: 0;
+        border-bottom: 2px solid $color-white;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:before, &:after {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $color-white;
+        }
+
+        &:after{
+            top: 9px;
+        }
+    }
+
+    &:hover, &:focus {
+        background: transparent;
+    }
+}
+
+.hamburger-text {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: rem(4);
+    clip: auto;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: rem(16);
+
+    .is-active & {
+        display: none;
+    }
+}

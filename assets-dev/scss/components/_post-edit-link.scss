@@ -1,0 +1,20 @@
+/**
+ * Post Edit Link
+ */
+
+ .post-edit-link,
+ .edit-link a {
+	 @extend .btn;
+	 margin: 20px 0;
+	 font-size: 1.6rem;
+	 padding: 6px 20px;
+	 background-color: $color-primary;
+         color: $color-white;
+
+	 .no-touch &:hover {
+		 background: transparent;
+		 background-color: shade($color-primary, 50%);
+                 color: $color-white;
+	 }
+ }
+

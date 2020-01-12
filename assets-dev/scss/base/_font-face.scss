@@ -1,0 +1,274 @@
+@import "../variables";
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-Smbd.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-Smbd.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedSubh.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-LtDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-LtDisp.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedItCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedItCapt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdItSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdItSubh.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedItSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedItSubh.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premier Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-It.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premier Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedIt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdDisp.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-ItSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-ItSubh.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedDisp.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-Disp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-Disp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-Subh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-Subh.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-LtItDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-LtItDisp.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdCapt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdCapt.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-ItDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-ItDisp.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdSubh.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdItCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdItCapt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdItDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdItDisp.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdDisp.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdItSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdItSubh.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdItDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdItDisp.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-Med.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premier Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdIt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdItCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdItCapt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premier Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-SmbdIt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-SmbdIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-ItCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-ItCapt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-BdSubh.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-BdSubh.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-Capt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-Capt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedItDisp.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedItDisp.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-MedCapt.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-MedCapt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('#{$premiere-font-path}/GaramondPremrPro-Bd.woff2') format('woff2'),
+        url('#{$premiere-font-path}/GaramondPremrPro-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

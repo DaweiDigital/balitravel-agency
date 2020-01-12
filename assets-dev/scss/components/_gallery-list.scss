@@ -1,0 +1,55 @@
+.gallery-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-list-item {
+    padding: 0;
+    width: 32.3%;
+    height: 0;
+    padding-bottom: 33%;
+    overflow: hidden;
+    margin: .5% !important;
+
+    &:before {
+        content: "";
+    }
+}
+
+.gallery-list-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &:before {
+        content: fa-content($fa-var-search-plus);
+        font-family: "Font Awesome 5 Pro";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: $color-white;
+        z-index: 5;
+        @include bg-opacity($color-secondary, .5);
+        transition: all ease .3s;
+        transform: scaleX(0);
+    }
+
+    img {
+        @include center-align-transform;
+    }
+
+    .no-touch &:hover {
+        &:before {
+            transform: scaleX(1);
+        }
+    }
+}

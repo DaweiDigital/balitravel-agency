@@ -1,0 +1,51 @@
+{
+    "key": "group_5cdac858ab746",
+    "title": "Sidebar Icon",
+    "fields": [
+        {
+            "key": "field_5cdac86017a89",
+            "label": "Ikona v sidebaru",
+            "name": "icon_in_sidebar",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Lupa": "Lupa",
+                "Kniha": "Kniha",
+                "Student": "Student",
+                "Tiskarna": "Tiskarna"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1557842671
+}

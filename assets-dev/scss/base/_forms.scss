@@ -1,0 +1,176 @@
+/**
+ * Forms
+ */
+
+form {
+
+}
+
+.centered-form {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid $color-grey;
+    padding: 15px;
+    outline: 0;
+    line-height: 1;  
+    font-size: 1.5rem;
+    font-family: $font-family;
+    font-weight: $regular;
+    appearance: none;
+    -webkit-appearance:none;
+    margin-bottom: 20px;
+    transition:border-color ease .3s;
+
+    .no-touch &:hover, &:focus {
+        border-color: $color-secondary;
+    }
+
+    :-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px $color-white inset;
+    }
+}
+
+.input-ghost {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.65);
+    color: $color-white;
+
+    @include form-placeholder {
+        color: rgba(255,255,255,0.65);
+        transition: color ease .3s;
+    }
+
+    .no-touch &:hover, &:focus {
+        border-color: $color-white;
+
+        @include form-placeholder {
+            color: $color-white;
+        }
+    }
+}
+
+textarea {    
+    resize: none;
+    height: 246px;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+input {
+    &::-webkit-contacts-auto-fill-button {
+        visibility: hidden;
+        display: none !important;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+    }
+}
+
+select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px $color-white inset;
+}
+
+.label {
+    float: left;
+    width: 100%;
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 15px;
+
+    &:after {
+        content:"*";
+        display: inline-block;
+        color: $color-red;
+        margin-left: 8px;
+    }
+}
+
+.form-web {
+
+}
+
+.form-group {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 22px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.btn-submit {
+    float: right;
+    margin-top: 20px;
+}
+
+// WORDPRESS ERROR MESSAGES STYLE
+.wpcf7 {
+    span.wpcf7-not-valid-tip {
+        position: absolute;
+        top: -13px;
+        right: 4px;
+        font-size: 14px;
+        color: $color-red;
+    }
+
+    div.wpcf7-validation-errors, div.wpcf7-mail-sent-ng {
+        margin-top: 25px;
+        text-align: center;
+        border: none;
+        font-size: 15px;
+        color: $color-red;
+        padding: 0;
+
+        @include media-breakpoint-down(xs) {
+            margin-top: 20px;
+        }
+    }
+}
+
+div.wpcf7 {
+    @include no-float-targets;
+    margin-top: 50px;
+
+    .ajax-loader {
+        @include horizontal-center-align-transform;
+        top: -17px;
+    }
+}
+
+.wpcf7-form {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.wpcf7-form-control-wrap {
+    @include no-float-targets;
+    display: block;
+}
+
+
+
+

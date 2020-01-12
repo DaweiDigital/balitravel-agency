@@ -1,0 +1,35 @@
+.main-banner-section {
+    height: 800px;   
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        width: 73%;
+        height: 1900px;
+        position: absolute;
+        top: -57%;
+        right: -32%;
+        background-color: $color-black;
+        opacity: .75;
+        transform: rotate(-30deg);
+    }
+}
+
+.main-banner-title {
+    font-size: 4.8rem;
+    font-weight: $bold;
+    color: $color-white;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.main-banner-text {
+    font-size: 2rem;
+    color: $color-white;
+    line-height: 1.4;
+    margin: 35px 0 60px;
+}

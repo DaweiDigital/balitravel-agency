@@ -1,0 +1,113 @@
+.social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-list-item {
+  padding: 0;
+  margin: 0;
+
+  &:before {
+    content: "";
+  }
+}
+
+.social-list-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $color-white;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all ease .3s;
+
+  &[href*="facebook"] {
+    background-color: #3b5998;
+
+    .no-touch &:hover {
+      background-color: $color-white;
+      color: #3b5998;
+      border-color: #3b5998;
+    }
+  }
+
+  &[href*="twitter"] {
+    background-color: #55acee;
+
+    .no-touch &:hover {
+      background-color: $color-white;
+      color: #55acee;
+      border-color: #55acee;
+    }
+  }
+
+  &[href*="linkedin"] {
+    background-color: #0077b5;
+
+    .no-touch &:hover {
+      background-color: $color-white;
+      color: #0077b5;
+      border-color: #0077b5;
+    }
+  }
+
+  &[href*="wa"] {
+    background-color: #34af23;
+
+    .no-touch &:hover {
+      background-color: $color-white;
+      color: #34af23;
+      border-color: #34af23;
+    }
+  }
+
+  &.copy-link {
+    color: $color-black;
+    position: relative;
+    border-color: $color-grey-3;
+
+    .no-touch &:hover {
+      color: $color-grey-3;
+      ;
+      border-color: $color-black;
+    }
+  }
+}
+
+.tooltip-clipboard {
+  position: absolute;
+  top: 41px;
+  left: -24px;
+  opacity: 0;
+  transition: opacity ease .3s;
+  @include bg-opacity($color-black, .75);
+  color: $color-white;
+  padding: 6px 17px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent rgba(0,0,0,.75) transparent;
+
+  }
+
+  &.succed {
+    opacity: 1;
+  }
+}
